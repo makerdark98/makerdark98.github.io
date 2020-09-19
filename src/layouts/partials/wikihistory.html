@@ -8,6 +8,7 @@
 <script src="/js/localhistory.js">
 </script>
 <script> 
-  var now = {{ .File.BaseFileName }}
-  pushHistory(now);
+  var currentName = {{ .File.BaseFileName }}
+  var currentLink = {{ .Permalink }}
+  pushHistory(currentName, currentLink);
 </script>
