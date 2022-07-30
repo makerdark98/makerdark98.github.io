@@ -1,8 +1,8 @@
 <html>
     <body>
         <script>
-            var query = window.location.search;
-            window.location.assign('https://minuk.dev/' + query);
+            var query = window.location.pathname+window.location.search;
+            window.location.assign('https://minuk.dev' + query);
         </script>
     </body>
 </html>
